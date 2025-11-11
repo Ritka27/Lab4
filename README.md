@@ -5,7 +5,8 @@
 
 ## Скриншоты
 ### Bootstrap 5
-![Bootstrap](screenshots/bootstrap-landing.png)
+<img width="1757" height="812" alt="image" src="https://github.com/user-attachments/assets/46ad4bc9-bb1c-426b-8db1-857fa0bbb6ed" />
+
 
 ### Tailwind CSS
 ![Tailwind](screenshots/tailwind-landing.png)
