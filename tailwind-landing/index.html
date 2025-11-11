@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Assistant Pro - нежный помощник для мам и малышей" />
+  <title>AI Assistant Pro</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Sitka Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Sitka+Display:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Настройка Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sitka: ['"Sitka Display"', 'serif'],
+          },
+          colors: {
+            beige: {
+              50: '#fdf9f3',
+              100: '#f5ebe0',
+              200: '#efebe9',
+              300: '#d7ccc8',
+              400: '#bcaaa4',
+              500: '#a1887f',
+              600: '#8d6e63',
+              700: '#6d4c41',
+              800: '#5d4037',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Sitka Display', serif;
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(255, 245, 235, 0.85), rgba(255, 245, 235, 0.9)),
+                        url('https://images.unsplash.com/photo-1588417472845-9a6fe3b6b7b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-beige-50 text-beige-800 text-lg leading-relaxed">
+
+  <!-- Навигация -->
+  <nav class="bg-beige-100 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-beige-700">AI Assistant Pro</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="text-beige-700 hover:text-beige-500 font-medium transition">Главная</a>
+        <a href="#about" class="text-beige-700 hover:text-beige-500 font-medium transition">О продукте</a>
+        <a href="#advantages" class="text-beige-700 hover:text-beige-500 font-medium transition">Преимущества</a>
+        <a href="#contact" class="text-beige-700 hover:text-beige-500 font-medium transition">Контакты</a>
+      </div>
+      <button class="md:hidden text-beige-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg py-32 text-center rounded-b-3xl shadow-lg">
+    <div class="container mx-auto px-4">
+      <h1 class="text-5xl md:text-6xl font-bold text-beige-700 mb-6 drop-shadow-md">AI Assistant Pro</h1>
+      <p class="text-xl md:text-2xl text-beige-700 mb-8 max-w-2xl mx-auto">Нежный помощник для самых заботливых мам</p>
+      <button class="bg-beige-300 hover:bg-beige-400 text-beige-800 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+        Попробовать бесплатно
+      </button>
+    </div>
+  </section>
+
+  <!-- О продукте -->
+  <section id="about" class="py-20 bg-beige-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-beige-700 mb-8">Ваш тёплый помощник в заботе о малыше</h2>
+      <p class="max-w-3xl mx-auto text-lg text-beige-700">
+        AI Assistant Pro — это не просто приложение. Это ваш личный консультант, который понимает, как важно быть рядом с малышом. 
+        Мы помогаем с режимом, питанием, развитием — всё с теплом и заботой.
+      </p>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section id="advantages" class="py-20 bg-beige-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-beige-700 text-center mb-12">Почему мамы выбирают нас</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Карточка 1 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-beige-200">
+          <div class="text-center">
+            <h5 class="text-xl font-semibold text-beige-600 mb-3">Персональные советы</h5>
+            <p class="text-beige-700">AI изучает вашего малыша и предлагает рекомендации, как заботливая подруга.</p>
+          </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-beige-200">
+          <div class="text-center">
+            <h5 class="text-xl font-semibold text-beige-600 mb-3">Спокойный сон</h5>
+            <p class="text-beige-700">Помогаем выстроить режим дня и ночи — для счастья всей семьи.</p>
+          </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-beige-200">
+          <div class="text-center">
+            <h5 class="text-xl font-semibold text-beige-600 mb-3">Развитие с любовью</h5>
+            <p class="text-beige-700">Игры, занятия и советы — всё для гармоничного роста вашего малыша.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer id="contact" class="bg-gradient-to-r from-beige-200 to-beige-300 py-12 text-beige-700">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div>
+          <h5 class="text-xl font-bold">AI Assistant Pro</h5>
+          <p class="text-sm">С любовью к мамам и малышам</p>
+        </div>
+        <div class="mt-4 md:mt-0 space-x-4 text-sm">
+          <a href="#home" class="hover:text-beige-600">Главная</a> • 
+          <a href="#about" class="hover:text-beige-600">О нас</a> • 
+          <a href="#advantages" class="hover:text-beige-600">Преимущества</a> • 
+          <a href="#contact" class="hover:text-beige-600">Контакты</a>
+        </div>
+      </div>
+      <p class="text-center text-xs mt-8">&copy; 2025 AI Assistant Pro. Все права защищены.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

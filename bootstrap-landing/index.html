@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Assistant Pro - нежный помощник для мам и малышей">
+    <title>AI Assistant Pro</title>
+
+    <!-- Подключение Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Подключение шрифта Sitka (через Google Fonts — ближайший аналог) -->
+    <link href="https://fonts.googleapis.com/css2?family=Sitka+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Sitka Display', serif;
+            background-color: #fdf9f3; /* Очень светлый бежевый фон */
+            color: #5d4037; /* Тёплый коричневый текст */
+            font-size: 1.2rem; /* Увеличенный базовый шрифт */
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            color: #8d6e63; /* Нежный тёплый заголовок */
+        }
+
+        .navbar {
+            background-color: #f5ebe0 !important; /* Бежевый навбар */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #6d4c41 !important;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: #a1887f !important;
+        }
+
+        /* Hero секция */
+        .hero-section {
+            background: linear-gradient(rgba(255, 245, 235, 0.85), rgba(255, 245, 235, 0.9)), 
+                        url('https://images.unsplash.com/photo-1588417472845-9a6fe3b6b7b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            padding: 120px 0;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            color: #6d4c41;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .hero-section .lead {
+            font-size: 1.5rem;
+            color: #795548;
+            margin: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #d7ccc8;
+            border-color: #d7ccc8;
+            color: #5d4037;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: #bcaaa4;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        /* Секции */
+        .about-section, .advantages-section {
+            padding: 80px 0;
+            background-color: #fffaf0; /* Ещё нежнее */
+        }
+
+        .advantages-section {
+            background-color: #f5ebe0;
+        }
+
+        .card {
+            background-color: #fff8f0;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+
+        .card-title {
+            color: #8d6e63;
+            font-size: 1.4rem;
+        }
+
+        .card-text {
+            color: #6d4c41;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #efebe9 0%, #d7ccc8 100%);
+            color: #5d4037;
+            padding: 60px 0 30px;
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+        }
+
+        footer a {
+            color: #8d6e63;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            color: #a1887f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">AI Assistant Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О продукте</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section с фото мамы и малыша -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>AI Assistant Pro</h1>
+            <p class="lead">Нежный помощник для самых заботливых мам</p>
+            <button class="btn btn-primary">Попробовать бесплатно</button>
+        </div>
+    </section>
+
+    <!-- О продукте -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Ваш тёплый помощник в заботе о малыше</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center">AI Assistant Pro — это не просто приложение. Это ваш личный консультант, который понимает, как важно быть рядом с малышом. Мы помогаем с режимом, питанием, развитием — всё с теплом и заботой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="advantages" class="advantages-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Почему мамы выбирают нас</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-4 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Персональные советы</h5>
+                            <p class="card-text">AI изучает вашего малыша и предлагает рекомендации, как заботливая подруга.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Спокойный сон</h5>
+                            <p class="card-text">Помогаем выстроить режим дня и ночи — для счастья всей семьи.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Развитие с любовью</h5>
+                            <p class="card-text">Игры, занятия и советы — всё для гармоничного роста вашего малыша.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>AI Assistant Pro</h5>
+                    <p class="mb-0">С любовью к мамам и малышам</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>
+                        <a href="#home">Главная</a> • 
+                        <a href="#about">О нас</a> • 
+                        <a href="#advantages">Преимущества</a> • 
+                        <a href="#contact">Контакты</a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <small>&copy; 2025 AI Assistant Pro. Все права защищены.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
