@@ -1,4 +1,4 @@
-<img width="1820" height="823" alt="image" src="https://github.com/user-attachments/assets/f515a4d5-0a45-40dc-9dee-bd6d58c07c9e" /># Лабораторная работа №4: CSS-библиотеки
+# Лабораторная работа №4: CSS-библиотеки
 
 ## Описание
 Лендинг "AI Assistant Pro" — ИИ-помощник для мам. Реализован на Bootstrap 5 (компонентный) и Tailwind CSS (utility-first). Тема: нежная, бежевая, с шрифтом Sitka. Структура: навбар, hero, about, advantages (карточки), footer.
@@ -10,7 +10,6 @@
 
 ### Tailwind CSS
 <img width="1820" height="823" alt="image" src="https://github.com/user-attachments/assets/d9269ca5-5896-486a-9564-ad343a8bf935" />
-<img width="697" height="789" alt="image" src="https://github.com/user-attachments/assets/2a8522f5-5fa4-445c-b32c-417eedc06a78" />
 
 ## Ответы
 
